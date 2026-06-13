@@ -1,0 +1,10 @@
+CV Tailor Portal v4.0.0
+
+Changes:
+- Reorganized code into Config, Database, Repository, Service and Support layers.
+- Moved custom CSS and JavaScript into assets folders.
+- Preserved index.php, process.php and download.php public URLs.
+- Added database-backed IP rate limiting: 5 attempts per one-hour window.
+- Stores only an HMAC-SHA256 IP hash, not the raw IP address.
+- Added live remaining-attempt and retry countdown messages.
+- Preserved OpenAI generation, transaction logging, Markdown display, print/PDF, copy and native DOCX behavior.
